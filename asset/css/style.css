@@ -1,84 +1,94 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+main{
+    /* text-align: center; */
+    margin: 5% 10% ;
+    
     
 }
 
-.main{
 
-    margin: 20px auto 30px auto;
-    height: 1000px;
-    width: 938px;
-}
 
 .product{
+    width: calc(33%);
     display: inline-block;
-    position: relative;
-    margin:5px;
-    height:530px;
+    margin-top: 5%;
     
+     
+   
 }
 
 img{
-    height: 450px;
-    width: 300px;
+    width: 100%;
 }
 
-.discount{
-    position: absolute;
-    bottom: 20%;
-    left:0;
-    color: white;
-    padding:5px;
+.immagine1 {
+    width: 100%;
+    border-radius: 10px;
+}
+.immagine2{
+    display: none;
+    border-radius: 10px;
+
 }
 
-.bg-red{
-    background-color:red;
-}
+.photo:hover img:nth-child(1){
+    display: none;
 
-.add{
-    background-color: green;
-    position: absolute;
-    bottom:20%;
-    left: 20%;
 }
-
-#pos-special{
-    left:0;
+.photo:hover img:nth-child(2){
+    display: block;
 }
 
 .heart{
+    border-radius: 5px; 
+    background-color: aliceblue;
     position: absolute;
-    padding:2% 3% 2% 3%;
-    background-color: white;
-    right:0;
-    top:3%;
+    right: 0px;
+    top: 10px;
+    padding: 5px;
+    
+}
+.photo{
+    position: relative;
 }
 
-.img-b{
-    display:none;
+.discount{
+    background-color: red;
+    padding: 2px 2px ;
+    position:absolute;
+    bottom: 5%;
+    left: 0;
+    border-radius: 5px;
+    color: white;
 }
 
-.product:hover .img-b{
-    display:inline;
-    position: absolute;
-    height:530px;
-    z-index: 1;
-    left:0;
-    top:0;
+.sostenibilita{
+    background-color:green;
+    padding: 2px 2px ;
+    position:absolute;
+    bottom: 5%;
+    left: 12%;
+    border-radius: 5px;
+    color: white;
 }
-
-.brand{
-    color:grey;
+.sostenibilita2{
+    background-color:green;
+    padding: 2px 2px ;
+    position:absolute;
+    bottom: 5%;
+    left: 0;
+    border-radius: 5px;
+    color: white;
 }
-
 .new-price{
-    display: inline;
-    color:red;
+    color: red;
+    font-weight: bold;
 }
-
 .old-price{
-    display: inline;
-    color: grey;
     text-decoration: line-through;
+}
